@@ -20,7 +20,7 @@ Note the sheet ID, and put into a line in the .env file in the GoogleSheetsDataL
 SPREADSHEET_ID="PUT_YOUR_SPREADSHEET_ID_HERE"
 ```
 
-Create and Download a key for the service account and save the .json file OUTSIDE of your git directory to ensure you do NOT leak they key.
+Create and Download a key for the service account and save the .json file ***OUTSIDE*** of your git directory to ensure you do NOT leak they key.
 
 Add two lines to the .env file:
 ```Dotenv
@@ -47,3 +47,5 @@ range: 'Sheet1!A:C',  // Make Sure to change this to match # of Rows in data mea
 To see the actual dates, click on column A and set the Format to Number -> Date Time.
 
 ![Output Spreadsheet](doc/example.png "Example")
+
+This code is extracted from a [sump monitorying system that also captures data from an ADS1115 ADC, uses some IIR filtering and min/max processing.](https://github.com/jeremyrode/sumpmonitor)
