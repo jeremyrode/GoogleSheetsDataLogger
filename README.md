@@ -48,4 +48,4 @@ To see the actual dates, click on column A and set the Format to Number -> Date 
 
 ![Output Spreadsheet](doc/example.png "Example")
 
-This code is extracted from a [sump monitorying system that also captures data from an ADS1115 ADC, uses some IIR filtering and min/max processing.](https://github.com/jeremyrode/sumpmonitor)
+This code is extracted from a [sump monitoring system that also captures data from an ADS1115 ADC, uses some IIR filtering and min/max processing.](https://github.com/jeremyrode/sumpmonitor)
