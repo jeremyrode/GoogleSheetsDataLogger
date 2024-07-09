@@ -8,8 +8,7 @@ So here it is, a step-by-step easy example of logging data from a Raspberry Pi r
 
 It’s really easy to use, install Node.js and npm on your distro, then Google API Client and dotenv:
 ``` sh
-$ npm install googleapis
-$ npm install dotenv
+$ npm install googleapis dotenv
 ```
 
 Go to your Google Cloud Console and create a project.  Go to IAM & Admin and [create a service account.](https://cloud.google.com/iam/docs/service-accounts-create)
