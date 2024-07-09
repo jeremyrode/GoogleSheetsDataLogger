@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.1"
+  },
+  "name": "googlesheetsdatalogger",
+  "description": "There are many ways to log data, but few are as easy, powerful, and free like Google Sheets.  Originally, I was developing an app to log data from a sump pump system in a basement using *.csv files.  I thought it would be neat to have the data directly sent to a Google sheet, and have the graphs automatically update, and it was easier than I expected, but I thought a few steps were poorly documented.",
+  "version": "1.0.0",
+  "main": "GoogleSheetsDataLogger.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyrode/GoogleSheetsDataLogger.git"
+  },
+  "keywords": [
+    "Data",
+    "Logger",
+    "Google",
+    "Sheets"
+  ],
+  "author": "Jeremy Rode",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jeremyrode/GoogleSheetsDataLogger/issues"
+  },
+  "homepage": "https://github.com/jeremyrode/GoogleSheetsDataLogger#readme"
+}
