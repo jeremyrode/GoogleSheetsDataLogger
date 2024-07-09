@@ -13,7 +13,7 @@ $ npm install
 
 Go to your Google Cloud Console and create a project.  Go to IAM & Admin and [create a service account.](https://cloud.google.com/iam/docs/service-accounts-create)
 
-Create a Google Sheet, and [share the sheet with edit permssions with the service account.](https://support.google.com/a/users/answer/13309904?hl=en#sheets_share_specific)
+Create a Google Sheet, and [share the sheet with edit permissions with the service account.](https://support.google.com/a/users/answer/13309904?hl=en#sheets_share_specific)
 
 Note the sheet ID, and put into a line in the .env file in the GoogleSheetsDataLogger:
 ``` sh
@@ -24,8 +24,8 @@ Create and Download a key for the service account and save the .json file OUTSID
 
 Add two lines to the .env file:
 ```
-$ GCLOUD_PROJECT={YOUR_GOOGLE_CLOUD_PROJECT_ID}
-$ GOOGLE_APPLICATION_CREDENTIALS=/home/PATH_TO_SERVICE_ACCOUNT_KEY_JSON.json
+GCLOUD_PROJECT={YOUR_GOOGLE_CLOUD_PROJECT_ID}
+GOOGLE_APPLICATION_CREDENTIALS=/home/PATH_TO_SERVICE_ACCOUNT_KEY_JSON.json
 ```
 
 That's it! Then run the program:
@@ -36,14 +36,14 @@ $ node GoogleSheetsDataLogger.js
 Now comes the fun part, add some actual data to replace the example data to actually do something useful:
 Change the process.resourceUsage().maxRSS and process.cpuUsage().user on Line #56 to something useful:
 ```
-$ measurmentArray.push([(curDate - dateOffset) / dayFraction, process.resourceUsage().maxRSS, process.cpuUsage().user ]); //Variables to save
+measurmentArray.push([(curDate - dateOffset) / dayFraction, process.resourceUsage().maxRSS, process.cpuUsage().user ]); //Variables to save
 ```
 
 Don't forget to update the Sheet Range on Line #31 if the number of variables is changed:
 ```
-$ range: 'Sheet1!A:C',  // Make Sure to change this to match # of Rows in datameasurments
+range: 'Sheet1!A:C',  // Make Sure to change this to match # of Rows in data measurements
 ```
 
-To see the actual dates, click on column A and set the Format to Number -> Date Time
+To see the actual dates, click on column A and set the Format to Number -> Date Time.
 
 ![Output Spreadsheet](doc/example.png "Example")
