@@ -1,6 +1,6 @@
 # Google Sheets Data Logger: Log Data Directly to Google Sheets
 ## Backstory
-There are many ways to log data, but few are as easy, powerful, and free like Google Sheets.  Originally, I was developing an app to log data from a sump pump system in a basement using *.csv files.  I thought it would be neat to have the data directly sent to a Google sheet, and have the graphs automatically update, and it was easier than I expected, but I thought a few steps were poorly documented.
+There are many ways to log data, but few are as easy, powerful, and free like Google Sheets. Originally, I was developing an app to log current and water depth data from a sump pump system in a basement using *.csv files. I thought it would be neat to have the data directly sent to a Google sheet, having the graphs automatically update.  It was actually easier than I expected, but I did think a few steps were poorly documented.
 
 So here it is, a step-by-step easy example of logging data from a Raspberry Pi running node.js directly to a Google Sheet.
 
